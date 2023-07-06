@@ -1,0 +1,28 @@
+ALGORITHM AlgorithmCP
+VAR
+    vowel = STRING := "aeiouAEIOU";
+    sentence= STRING
+
+    vowel_count := 0;
+    character_count :=0;
+    word_count := 0;
+BEGIN
+    Read (sentence)
+
+    REPEAT
+        character_count := character_count + 1;
+        REPEAT
+            word_count := word_count + 1;
+        UNTIL (char = ' ')
+    UNTIL (char = ".")
+
+    WHILE (vowel in sentence) DO
+        vowel_count := vowel_count + 1;
+    END_WHILE
+    
+    Write (char_count) // The number of characters in the sentence.
+    Write (word_count) // The number of words in the sentence.
+    Write (vowel_count) // The number of vowels in the sentence.
+    
+    
+END
